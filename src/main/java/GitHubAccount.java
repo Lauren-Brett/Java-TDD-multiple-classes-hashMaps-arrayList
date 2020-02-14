@@ -16,10 +16,15 @@ public class GitHubAccount {
     }
 
     public String getUsername() {
-        return username;
+        return this.username;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
+
+    public AccountType getAccountType(){
+        return this.accountType;
+    }
+
 }
