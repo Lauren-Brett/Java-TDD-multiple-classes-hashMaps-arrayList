@@ -43,4 +43,16 @@ public class GitHubAccount {
     public void downgradeAccountType() {
         this.accountType = AccountType.FREE;
     }
+
+    public Repo getAccountByName(String string) {
+        return this.repositories.get(string);
+    }
+        //     Repo foundRepo = null;
+//        for (Repo repo : this.repositories) {
+//            if(repo.getName() == string){
+//                foundRepo = repo;
+//            }
+//        }
+//         return foundRepo;
+
 }

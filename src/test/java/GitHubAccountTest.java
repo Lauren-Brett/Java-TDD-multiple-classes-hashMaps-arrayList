@@ -10,10 +10,12 @@ import static org.junit.Assert.assertSame;
 public class GitHubAccountTest {
 
     private GitHubAccount gitHubAccount;
+    private GitHubAccount gitHubAccount1;
 
     @Before
     public void before(){
         gitHubAccount = new GitHubAccount("Lauren", "week 11", AccountType.FREE);
+        gitHubAccount1 = new GitHubAccount("Chloe", "week 3", AccountType.PRO);
     }
 
     @Test
@@ -53,8 +55,10 @@ public class GitHubAccountTest {
     @Test
     public void canGetReposByName(){
         Repo repo = new Repo("Lauren","java", RepoType.PUBLIC);
-        gitHubAccount.getAccountByName("Lauren");
-        assertEquals();
+        Repo repo2 = new Repo("Polly","java", RepoType.PRIVATE);
+        gitHubAccount.addRepo(repo);
+        gitHubAccount.addRepo(repo2);
+        assertEquals(repo2, gitHubAccount.getAccountByName("Polly"));
     }
 
 
