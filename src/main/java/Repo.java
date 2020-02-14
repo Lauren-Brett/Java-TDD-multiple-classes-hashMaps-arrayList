@@ -4,29 +4,30 @@ public class Repo {
 
     private String name;
     private String description;
-    private String repoType;
+    private RepoType repoType;
     private ArrayList<Commit> commits;
 
-    public Repo(String name, String description, String repoType){
+    public Repo(String name, String description, RepoType repoType) {
         this.name = name;
         this.description = description;
         this.repoType = repoType;
         this.commits = new ArrayList<Commit>();
+
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return this.description;
     }
 
-    public String getRepoType(){
-        return this.repoType;
+    public RepoType getRepoType() {
+        return repoType;
     }
 
-    public int getCommits(){
+    public int getCommits() {
         return this.commits.size();
     }
 
@@ -34,5 +35,7 @@ public class Repo {
         this.commits.add(commit);
     }
 
-
 }
+
+//
+//

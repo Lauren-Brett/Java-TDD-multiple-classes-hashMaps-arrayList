@@ -17,10 +17,13 @@ public class RepoTest {
 
     @Before
     public void before(){
-        repo = new Repo("Lab","Java arrays", "private");
+        repo = new Repo("Lab","Java arrays", RepoType.PRIVATE);
         commit1 = new Commit("setup", "AB12");
         commit2 = new Commit("classes added", "BC23");
         commit3 = new Commit("setup", "DE45");
+
+//        repo.addCommit(commit1);
+//        repo.addCommit(commit2);
     }
 
     @Test
@@ -35,7 +38,7 @@ public class RepoTest {
 
     @Test
     public void canGetRepoType(){
-        assertEquals("private", repo.getRepoType());
+        assertEquals(RepoType.PRIVATE, repo.getRepoType());
     }
 
     @Test
@@ -49,11 +52,12 @@ public class RepoTest {
         assertEquals(1, repo.getCommits());
     }
 
-    @Test
-    public void getCommitById(){
-        repo.getCommitById(commit1);
-        assertEquals("AB12", );
-    }
+
+
+//    @Test
+//    public void getCommitById(){
+//        assertEquals();
+//    }
 
 
 
