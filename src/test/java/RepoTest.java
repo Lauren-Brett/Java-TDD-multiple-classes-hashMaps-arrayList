@@ -2,12 +2,15 @@ import org.junit.Before;
 import org.junit.Test;
 import org.omg.CORBA.PUBLIC_MEMBER;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertSame;
 
 public class RepoTest {
 
     private Repo repo;
+    private Commit commit;
     private Commit commit1;
     private Commit commit2;
     private Commit commit3;
@@ -18,7 +21,6 @@ public class RepoTest {
         commit1 = new Commit("setup", "AB12");
         commit2 = new Commit("classes added", "BC23");
         commit3 = new Commit("setup", "DE45");
-
     }
 
     @Test
@@ -44,9 +46,17 @@ public class RepoTest {
     @Test
     public void addCommitToRepo(){
         repo.addCommit(commit1);
-        repo.addCommit(commit2);
-        assertEquals(2, repo.getCommits());
+        assertEquals(1, repo.getCommits());
     }
+
+    @Test
+    public void getCommitById(){
+        repo.getCommitById(commit1);
+        assertEquals("AB12", );
+    }
+
+
+
 
 
 }
