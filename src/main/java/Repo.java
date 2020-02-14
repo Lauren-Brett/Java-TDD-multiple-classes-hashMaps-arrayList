@@ -12,7 +12,6 @@ public class Repo {
         this.description = description;
         this.repoType = repoType;
         this.commits = new ArrayList<Commit>();
-
     }
 
     public String getName() {
@@ -33,6 +32,16 @@ public class Repo {
 
     public void addCommit(Commit commit) {
         this.commits.add(commit);
+    }
+
+    public Commit findCommitById(String id){
+        Commit foundCommit = null;
+        for (Commit commit : this.commits) {
+            if(commit.getUniqueId() == id){
+                foundCommit = commit;
+            }
+        }
+        return foundCommit;
     }
 
 }

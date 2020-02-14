@@ -10,6 +10,7 @@ import static org.junit.Assert.assertSame;
 public class RepoTest {
 
     private Repo repo;
+    private Repo repo1;
     private Commit commit;
     private Commit commit1;
     private Commit commit2;
@@ -18,6 +19,7 @@ public class RepoTest {
     @Before
     public void before(){
         repo = new Repo("Lab","Java arrays", RepoType.PRIVATE);
+        repo1 = new Repo("HW","Ruby mvp", RepoType.PUBLIC);
         commit1 = new Commit("setup", "AB12");
         commit2 = new Commit("classes added", "BC23");
         commit3 = new Commit("setup", "DE45");
@@ -39,6 +41,7 @@ public class RepoTest {
     @Test
     public void canGetRepoType(){
         assertEquals(RepoType.PRIVATE, repo.getRepoType());
+        assertEquals(RepoType.PUBLIC, repo1.getRepoType());
     }
 
     @Test
@@ -52,15 +55,13 @@ public class RepoTest {
         assertEquals(1, repo.getCommits());
     }
 
-
-
-//    @Test
-//    public void getCommitById(){
-//        assertEquals();
-//    }
-
-
-
+    @Test
+    public void findCommitById(){
+        repo.addCommit(commit1);
+        repo.addCommit(commit2);
+        Commit foundCommit = repo.findCommitById("AB12");
+        assertEquals(commit1,foundCommit);
+    }
 
 
 }

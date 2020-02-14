@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc875101-c395-42d9-833a-4409f646f10c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/RepoType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AccountType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GitHubAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GitHubAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GitHubAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GitHubAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RepoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Repo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/RepoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RepoTest.class" afterDir="false" />
@@ -52,22 +54,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RepoTest">
+  <component name="RunManager" selected="JUnit.RepoTest.canGetRepoType">
     <configuration name="RepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wek11_weekendhw_github_tdd_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RepoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepoTest.addCommitToRepo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wek11_weekendhw_github_tdd_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RepoTest" />
-      <option name="METHOD_NAME" value="addCommitToRepo" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,6 +84,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RepoTest.findCommitById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wek11_weekendhw_github_tdd_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RepoTest" />
+      <option name="METHOD_NAME" value="findCommitById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RepoTest.getCommitById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wek11_weekendhw_github_tdd_java" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RepoTest.canGetRepoType" />
+        <item itemvalue="JUnit.RepoTest.findCommitById" />
         <item itemvalue="JUnit.RepoTest" />
         <item itemvalue="JUnit.RepoTest.commitsStartsAtZero" />
         <item itemvalue="JUnit.RepoTest.getCommitById" />
-        <item itemvalue="JUnit.RepoTest.canGetRepoType" />
-        <item itemvalue="JUnit.RepoTest.addCommitToRepo" />
       </list>
     </recent_temporary>
   </component>
