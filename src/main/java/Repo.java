@@ -7,7 +7,7 @@ public class Repo {
     private String repoType;
     private ArrayList<Commit> commits;
 
-    public Repo(String name, String description, String repoType, ArrayList<Commit>()){
+    public Repo(String name, String description, String repoType){
         this.name = name;
         this.description = description;
         this.repoType = repoType;
@@ -26,7 +26,11 @@ public class Repo {
         return this.repoType;
     }
 
-    public ArrayList<Commit> getCommits(){
-        return this.commits;
+    public int getCommits(){
+        return this.commits.size();
+    }
+
+    public void addCommit(Commit commit) {
+        this.commits.add(commit);
     }
 }
