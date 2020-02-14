@@ -13,6 +13,7 @@ public class GitHubAccount {
         this.name = name;
         this.accountType = accountType;
         this.repositories = new HashMap<String, Repo>();
+
     }
 
     public String getUsername() {
@@ -27,4 +28,19 @@ public class GitHubAccount {
         return this.accountType;
     }
 
+    public int getNumberOfRepos() {
+        return this.repositories.size();
+    }
+
+    public void addRepo(Repo repo) {
+        this.repositories.put(repo.getName(), repo);
+    }
+
+    public void upgradeAccountType(){
+        this.accountType = AccountType.PRO;
+    }
+
+    public void downgradeAccountType() {
+        this.accountType = AccountType.FREE;
+    }
 }

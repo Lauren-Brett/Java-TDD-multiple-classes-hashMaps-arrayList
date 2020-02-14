@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc875101-c395-42d9-833a-4409f646f10c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GitHubAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccountType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GitHubAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GitHubAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GitHubAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GitHubAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GitHubAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AccountType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AccountType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GitHubAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GitHubAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GitHubAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GitHubAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GitHubAccountTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GitHubAccountTest.getAccountType">
+  <component name="RunManager" selected="JUnit.GitHubAccountTest.canDownGradeAccountType">
+    <configuration name="GitHubAccountTest.addToRepositories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wek11_weekendhw_github_tdd_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GitHubAccountTest" />
+      <option name="METHOD_NAME" value="addToRepositories" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GitHubAccountTest.canDownGradeAccountType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wek11_weekendhw_github_tdd_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GitHubAccountTest" />
+      <option name="METHOD_NAME" value="canDownGradeAccountType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GitHubAccountTest.canUpgradeAccpuntType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wek11_weekendhw_github_tdd_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GitHubAccountTest" />
+      <option name="METHOD_NAME" value="canUpgradeAccpuntType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GitHubAccountTest.getAccountType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wek11_weekendhw_github_tdd_java" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,43 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GitHubAccountTest.getGitHubUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wek11_weekendhw_github_tdd_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GitHubAccountTest" />
-      <option name="METHOD_NAME" value="getGitHubUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GitHubAccount.getGitHubUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wek11_weekendhw_github_tdd_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GitHubAccount" />
-      <option name="METHOD_NAME" value="getGitHubUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepoTest.canGetRepoType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wek11_weekendhw_github_tdd_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RepoTest" />
-      <option name="METHOD_NAME" value="canGetRepoType" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GitHubAccountTest.canDownGradeAccountType" />
+        <item itemvalue="JUnit.GitHubAccountTest.canUpgradeAccpuntType" />
+        <item itemvalue="JUnit.GitHubAccountTest.addToRepositories" />
         <item itemvalue="JUnit.GitHubAccountTest.getAccountType" />
         <item itemvalue="JUnit.GitHubAccountTest.getGitHubName" />
-        <item itemvalue="JUnit.GitHubAccountTest.getGitHubUsername" />
-        <item itemvalue="JUnit.GitHubAccount.getGitHubUsername" />
-        <item itemvalue="JUnit.RepoTest.canGetRepoType" />
       </list>
     </recent_temporary>
   </component>

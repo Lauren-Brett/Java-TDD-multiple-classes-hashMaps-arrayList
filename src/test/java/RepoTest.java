@@ -24,8 +24,6 @@ public class RepoTest {
         commit2 = new Commit("classes added", "BC23");
         commit3 = new Commit("setup", "DE45");
 
-//        repo.addCommit(commit1);
-//        repo.addCommit(commit2);
     }
 
     @Test
