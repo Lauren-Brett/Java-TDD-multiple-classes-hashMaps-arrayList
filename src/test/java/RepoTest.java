@@ -19,6 +19,8 @@ public class RepoTest {
     @Before
     public void before(){
         repo = new Repo("Lab","Java arrays", RepoType.PRIVATE);
+        repo.addCommit(commit2);
+        repo.addCommit(commit1);
         repo1 = new Repo("HW","Ruby mvp", RepoType.PUBLIC);
         commit1 = new Commit("setup", "AB12");
         commit2 = new Commit("classes added", "BC23");
@@ -59,6 +61,11 @@ public class RepoTest {
         repo.addCommit(commit2);
         Commit foundCommit = repo.findCommitById("AB12");
         assertEquals(commit1,foundCommit);
+    }
+
+    @Test
+    public void canGetNumberOfCommits(){
+        assertEquals(2, repo.getCommits());
     }
 
 

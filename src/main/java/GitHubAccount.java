@@ -47,12 +47,9 @@ public class GitHubAccount {
     public Repo getAccountByName(String string) {
         return this.repositories.get(string);
     }
-        //     Repo foundRepo = null;
-//        for (Repo repo : this.repositories) {
-//            if(repo.getName() == string){
-//                foundRepo = repo;
-//            }
-//        }
-//         return foundRepo;
+
+//    public boolean getAccountByName(String string) {
+//        return this.repositories.containsKey(string);
+//    }
 
 }

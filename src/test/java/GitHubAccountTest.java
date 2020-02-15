@@ -1,6 +1,8 @@
+import com.sun.org.apache.regexp.internal.RE;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.omg.CORBA.PRIVATE_MEMBER;
 
 import java.util.HashMap;
 
@@ -11,21 +13,34 @@ public class GitHubAccountTest {
 
     private GitHubAccount gitHubAccount;
     private GitHubAccount gitHubAccount1;
+    private GitHubAccount gitHubAccount2;
+    private GitHubAccount gitHubAccount3;
+    private Repo repo1;
+    private Repo repo2;
 
     @Before
     public void before(){
-        gitHubAccount = new GitHubAccount("Lauren", "week 11", AccountType.FREE);
-        gitHubAccount1 = new GitHubAccount("Chloe", "week 3", AccountType.PRO);
+        gitHubAccount = new GitHubAccount("lcb", "Lauren", AccountType.FREE);
+        gitHubAccount1 = new GitHubAccount("csb", "Chloe", AccountType.PRO);
+        gitHubAccount2 = new GitHubAccount("snb", "Sophie", AccountType.PRO);
+        gitHubAccount3 = new GitHubAccount("pld", "Polly", AccountType.PRO);
+        repo1 = new Repo("Java", "Wk11", RepoType.PRIVATE);
+        repo2 = new Repo("JS", "Wk6", RepoType.PUBLIC);
+        gitHubAccount.addRepo(repo1);
+        gitHubAccount.addRepo(repo2);
+
+
     }
+
 
     @Test
     public void getGitHubUsername(){
-    Assert.assertEquals("Lauren", gitHubAccount.getUsername());
+    Assert.assertEquals("lcb", gitHubAccount.getUsername());
     }
 
     @Test
     public void canGetGitHubName(){
-        assertSame("week 11", gitHubAccount.getName());
+        assertSame("Lauren", gitHubAccount.getName());
     }
 
     @Test
@@ -35,13 +50,12 @@ public class GitHubAccountTest {
 
     @Test
     public void canAddToRepositories(){
-        Repo repo = new Repo("Lauren","java", RepoType.PUBLIC);
-        gitHubAccount.addRepo(repo);
+        gitHubAccount.addRepo(repo1);
         assertEquals(1, gitHubAccount.getNumberOfRepos());
     }
 
     @Test
-    public void canUpgradeAccpuntType(){
+    public void canUpgradeAccountType(){
         gitHubAccount.upgradeAccountType();
         assertEquals(AccountType.PRO, gitHubAccount.getAccountType());
     }
@@ -54,14 +68,10 @@ public class GitHubAccountTest {
 
     @Test
     public void canGetReposByName(){
-        Repo repo = new Repo("Lauren","java", RepoType.PUBLIC);
-        Repo repo2 = new Repo("Polly","java", RepoType.PRIVATE);
-        gitHubAccount.addRepo(repo);
+        gitHubAccount.addRepo(repo1);
         gitHubAccount.addRepo(repo2);
-        assertEquals(repo2, gitHubAccount.getAccountByName("Polly"));
+        assertEquals(repo1, gitHubAccount.getAccountByName("Java"));
+//        assertEquals(true, gitHubAccount.getAccountByName("Java"));
     }
-
-
-
 
 }
