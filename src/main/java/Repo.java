@@ -26,6 +26,14 @@ public class Repo {
         return repoType;
     }
 
+    // ALTERNATIVE
+//    public RepoType findEnum() {
+//        for (RepoType blah : RepoType.values()) {
+//            this.repoType = blah;
+//        }
+//        return this.repoType;
+//    }
+
     public int getCommits() {
         return this.commits.size();
     }
@@ -44,7 +52,15 @@ public class Repo {
         return foundCommit;
     }
 
-}
+
+//    public Commit getFirstCommit(Repo repo) {
+//
+//        return this.repo.lastIndexOf(commits);
+//
+//}
+
+
+    }
 
 //
 //

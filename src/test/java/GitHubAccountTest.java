@@ -74,4 +74,9 @@ public class GitHubAccountTest {
 //        assertEquals(true, gitHubAccount.getAccountByName("Java"));
     }
 
+    @Test
+    public void canGetRepowWIthMostCommits(){
+        assertEquals(repo2, gitHubAccount.mostCommits(repo1, repo2));
+    }
+
 }

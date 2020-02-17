@@ -48,6 +48,15 @@ public class GitHubAccount {
         return this.repositories.get(string);
     }
 
+    public Repo mostCommits(Repo repo1, Repo repo2) {
+        if (repo1.getCommits() > repo2.getCommits()) {
+            return repo1;
+        }
+        else {
+            return repo2;
+        }
+    }
+
 //    public boolean getAccountByName(String string) {
 //        return this.repositories.containsKey(string);
 //    }

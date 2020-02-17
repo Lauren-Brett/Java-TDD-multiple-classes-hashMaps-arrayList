@@ -22,6 +22,7 @@ public class RepoTest {
         repo.addCommit(commit2);
         repo.addCommit(commit1);
         repo1 = new Repo("HW","Ruby mvp", RepoType.PUBLIC);
+        repo1.addCommit(commit3);
         commit1 = new Commit("setup", "AB12");
         commit2 = new Commit("classes added", "BC23");
         commit3 = new Commit("setup", "DE45");
@@ -43,6 +44,11 @@ public class RepoTest {
         assertEquals(RepoType.PRIVATE, repo.getRepoType());
         assertEquals(RepoType.PUBLIC, repo1.getRepoType());
     }
+
+//    @Test
+//    public void findEnum(){
+//        assertEquals(RepoType.PUBLIC, repo1.findEnum());
+//    }
 
     @Test
     public void commitsStartsAtZero(){
@@ -67,6 +73,11 @@ public class RepoTest {
     public void canGetNumberOfCommits(){
         assertEquals(2, repo.getCommits());
     }
+
+
+
+
+
 
 
 }
